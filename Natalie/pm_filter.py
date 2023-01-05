@@ -108,7 +108,7 @@ async def next_page(bot, query):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.dog/How_to_Download_From_Search_Bot/2')
+            InlineKeyboardButton(text="⚡HOW TO DOWNLOAD⚡", url='https://t.me/Auto_Filterrbot?start=ZmlsZV9CQUFEQlFBREx3Z0FBdTV4Y0ZXb0k5UWdTTDk1VGhZRQ')
         ]
     )
 
@@ -157,7 +157,7 @@ async def advantage_spoll_choker(bot, query):
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("𝐋𝐢𝐧𝐤 𝐄𝐱𝐩𝐢𝐫𝐞𝐝 𝐊𝐢𝐧𝐝𝐥𝐲 𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐚𝐫𝐜𝐡 𝐀𝐠𝐚𝐢𝐧 🙂.", show_alert=True)
+        return await query.answer("LINK Expired please request again🙂.", show_alert=True)
     movie = movies[(int(movie_))]
     await query.answer('𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 𝙵𝙸𝙻𝙴 𝙾𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴...//')
     k = await manual_filters(bot, query.message, text=movie)
@@ -167,7 +167,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('<b>🔰IF YOU DID NOT FIND YOUR REQUESTED MOVIE\n\n<i><u>THEN DM AT:- @Movies_series_Requestbot</i></u>  \n\n\n {Movie Name Year }\n Eg:- Faster 2010.  \n\n  If You did not FIND Series then try this way:- \n\n Eg:- Money heist S01 (For full season)📝\n OR \n Money heist S01 E01 (If you need any particular episode)🛑🛑\n\n <i>🚫 NOTE 🚫\n\nWait for admin reply for at least 12 Hours</i></b>')
+            k = await query.message.edit("<b>🔰didn't FIND A MOVIE / SERIES ?? \n DO REQUEST IN THIS WAY \n <code>{Movie Name Year }</code> \n <code> Eg:- Faster 2010</code>. \n\n didn't find Series? TRY THIS WAY:-\n <code>Eg:- Money heist S01 (For full season)</code> \n OR \n Money heist S01 E01 (For Specific Episode)\n\n <i>🚫 NOTE 🚫\n\n \n <i><u>IF YOU Still didn't get your request then DO Message AT:- @Movies_series_Requestbot</i></u> \n Wait for admin reply for at least 12 Hours After doing  DM in bot</i></b>")
             await asyncio.sleep(10)
             await k.delete()
 
@@ -436,13 +436,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://telegram.dog/{temp.U_NAME}?startgroup=true')
-        ], [
-            InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url='https://youtube.com/c/GreyMattersBot'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://telegram.dog/greymatter_bots')
-        ], [
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('ADD ME IN GROUP FAST💕😘', url=f'http://telegram.dog/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('⚡BACKUP⚡', url='https://telegram.dog/R_Mvzz'),
+            InlineKeyboardButton('🤖UPDATES🤖', url='https://telegram.dog/REQUEST_MOvizz')
+            ],[
+            InlineKeyboardButton('♻️HELP♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ABOUT♻️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -691,7 +691,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.dog/How_to_Download_From_Search_Bot/2')
+            InlineKeyboardButton(text="HOW TO DOWNLOAD", url='https://t.me/Auto_Filterrbot?start=ZmlsZV9CQUFEQlFBREx3Z0FBdTV4Y0ZXb0k5UWdTTDk1VGhZRQ')
         ]
     )
 
@@ -742,7 +742,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\n\n😌 ɪꜰ ᴛʜᴇ ᴍᴏᴠɪᴇ ʏᴏᴜ ᴀʀᴇ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ ɪs ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ᴛʜᴇɴ ʟᴇᴀᴠᴇ ᴀ ᴍᴇssᴀɢᴇ ʙᴇʟᴏᴡ 😌 \n\nᴇxᴀᴍᴘʟᴇ : \n\nᴇɴᴛᴇʀ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ (ʏᴇᴀʀ) ᴛᴀɢ @admin"
+        cap = f"YOUR REQUEST IS:- <code>{search}</code>\n\n <b>🔰didn't FIND A MOVIE / SERIES ?? \n DO REQUEST IN THIS WAY \n <code>{Movie Name Year }</code> \n <code> Eg:- Faster 2010</code>. \n\n didn't find Series? TRY THIS WAY:-\n <code>Eg:- Money heist S01 (For full season)</code> \n OR \n Money heist S01 E01 (For Specific Episode)\n\n <i>🚫 NOTE 🚫\n\n \n <i><u>IF YOU Still didn't get your request then DO Message AT:- @Movies_series_Requestbot</i></u> \n Wait for admin reply for at least 12 Hours After doing  DM in bot</i></b>"
     if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
