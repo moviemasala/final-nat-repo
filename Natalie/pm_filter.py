@@ -742,7 +742,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"YOUR REQUEST IS:- <code>{search}</code>\n\n <b>🔰didn't FIND A MOVIE / SERIES ?? \n DO REQUEST IN THIS WAY \n <code>{Movie Name Year }</code> \n <code> Eg:- Faster 2010</code>. \n\n didn't find Series? TRY THIS WAY:-\n <code>Eg:- Money heist S01 (For full season)</code> \n OR \n Money heist S01 E01 (For Specific Episode)\n\n <i>🚫 NOTE 🚫\n\n \n <i><u>IF YOU Still didn't get your request then DO Message AT:- @Movies_series_Requestbot</i></u> \n Wait for admin reply for at least 12 Hours After doing  DM in bot</i></b>"
+        cap = f"YOUR REQUEST IS:- <code>{search}</code>\n\n <b>🔰didn't FIND A MOVIE / SERIES ?? \n DO REQUEST IN THIS WAY \n <code>(Movie Name Year )</code> \n <code> Eg:- Faster 2010</code>. \n\n didn't find Series? TRY THIS WAY:-\n <code>Eg:- Money heist S01 (For full season)</code> \n OR \n Money heist S01 E01 (For Specific Episode)\n\n <i>🚫 NOTE 🚫\n\n \n <i><u>IF YOU Still didn't get your request then DO Message AT:- @Movies_series_Requestbot</i></u> \n Wait for admin reply for at least 12 Hours After doing  DM in bot</i></b>"
     if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
