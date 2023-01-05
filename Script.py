@@ -12,18 +12,17 @@ def is_enabled(value, default):
 
 class script(object):
     HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://telegram.dog/r_mvzz')
-    START_TXT = environ.get("START_TXT", '''<b>Hello {} Hyee I am Natalie and I provide movies and series </b>
-
-<i>Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴍᴀɢɪᴄ ᴏʀ ʀᴇᴀᴅ ᴍᴏʀᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇɴᴜ ʙᴇʟᴏᴡ</i>''')
+    START_TXT = environ.get("START_TXT", '''<b>Hello Dear {}, I am Natalie and I provide movies and series </b>
+<i>Just add me to your group and thats it i will provide movies and series for free</i>''')
     HELP_TXT = """HEY {}
 HERE IS MY COMMANDS."""
     ABOUT_TXT = """<b><i>ᴍʏ ɴᴀᴍᴇ : <a href=https://telegram.dog/Auto_Filterrbot><b>Natalie Bot</b></a>\n
 👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://telegram.dog/R_MvzZ><b>RMvzZ</b></a>\n
-📡 ʜosᴛᴇᴅ ᴏɴ : ʜᴇʀᴏᴋᴜ\n
+📡 ʜosᴛᴇᴅ ᴏɴ : Heroku \n
 📢 Uᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://telegram.dog/REQUEST_MOvizz><b></b>REQUEST_MOvizz</a></b></i>"""
     SOURCE_TXT = """<b>Want To creat bot like this??</b>
-» we will Create One Bot For You <b>
-» Contact Us ON:- @NoNameBots<b>"""
+we will Create One Bot For You <b>
+Contact Us ON:- @NoNameBots<b>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Search Bot will respond whenever a keyword is found the message
