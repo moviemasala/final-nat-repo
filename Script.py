@@ -103,7 +103,7 @@ This module only works for my admins
 ★ TOTAL CHATS: <code>{}</code>
 ★ USED STORAGE: <code>{}</code> 
 ★ FREE STORAGE: <code>{}</code>"""
-    LOG_TEXT_G = """#NewValentinaUser
+    LOG_TEXT_G = """#NewNatalieGroup
     
 <b>᚛› 𝐆𝐫𝐨𝐮𝐩 ⪼ {}(<code>{}</code>)</b>
 <b>᚛› 𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 ⪼ <code>{}</code></b>
