@@ -12,39 +12,39 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '6504233'))
-API_HASH = environ.get('API_HASH', '1a243d05db794e22a924fe3c00572257')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5065015315:AAEKjlk8i6TNQptmXBKQaYXm2BwAZzqXDn4")
+API_ID = int(environ.get('API_ID', '16374594'))
+API_HASH = environ.get('API_HASH', 'ebabe6cf7ba47c82c109fdf4cf553205')
+BOT_TOKEN = environ.get('BOT_TOKEN', "5496479323:AAFAU3nzU0obM7BOifX-sGYbzLWltKr7pyY")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://graph.org/file/eade64df124e25023f551.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/37a222dc67679f091b188.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1927155351 5570402782 1733484689 1061059757').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001767714390').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001742616778  -1001680841206  -1001614580625  -10034182442').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1733484689').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001737418450')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001629622989')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://harshsoni:harshsoni@cluster0.in8zxol.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://MM:MM@cluster0.dwi8wj1.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001547941154'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'R_MvzZ')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001620131835)
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "Title: <code>{file_name}</code><b> \n\nJoin: @R_Mvzz\nBackup: @REQUEST_MOvizz</b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "Title: <code>{file_name}</code> <b>\n\nJoin: @R_Mvzz\nBackup: @REQUEST_MOvizz</b>")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<i><b>🧿ᴛɪᴛᴛʟᴇ: {title} \n 🌟ʀᴀᴛɪɴɢ: {rating} \n🎭ɢᴇɴʀᴇ: {genres} \n📆 ʀᴇʟᴇᴀsᴇ: {year} \n🎙️ʟᴀɴɢᴜᴀɢᴇ : {languages} \n Powered By:- RMvzZ</i></b>")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<i><b>🧿ᴛɪᴛᴛʟᴇ: {title} \n 🌟ʀᴀᴛɪɴɢ: {rating} \n🎭ɢᴇɴʀᴇ: {genres} \n📆 ʀᴇʟᴇᴀsᴇ: {year} \n🎙️ʟᴀɴɢᴜᴀɢᴇ : {languages} \n Powered By:- MM</i></b>")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
@@ -68,8 +68,8 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
     
       # URL Shortener #
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'shorturllink.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '74ec4052b0b4e419aa2d62437cd699b594423853')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', '')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
 
      # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 1000))
